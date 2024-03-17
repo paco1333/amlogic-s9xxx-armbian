@@ -12,7 +12,7 @@ on:
       set_release:
         description: "Select OS Release."
         required: false
-        default: "jammy"
+        default: "bullseye"
         type: choice
         options:
           - jammy
@@ -22,7 +22,7 @@ on:
       armbian_board:
         description: "Select device board."
         required: false
-        default: "all"
+        default: "s905x3-x96air"
         type: choice
         options:
           - all
@@ -156,7 +156,7 @@ on:
       armbian_kernel:
         description: "Select kernel version."
         required: false
-        default: "6.1.y_5.15.y"
+        default: "kernel_dev"
         type: choice
         options:
           - 5.4.y
@@ -182,7 +182,7 @@ on:
       kernel_usage:
         description: "Set the tags of the stable kernel."
         required: false
-        default: "stable"
+        default: "dev"
         type: choice
         options:
           - stable
@@ -208,7 +208,7 @@ on:
       builder_name:
         description: "Set Armbian builder signature."
         required: false
-        default: "ophub"
+        default: "paco"
         type: choice
         options:
           - ophub
